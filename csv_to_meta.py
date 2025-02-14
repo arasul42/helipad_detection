@@ -138,10 +138,10 @@ class CsvToYolo:
 
 
 if __name__ == "__main__":
-    input_csv_file_path = "../../data/Helipad_DataBase_annotated.csv"
-    output_folder = "../../helipad_images1"
+    input_csv_file_path = "./data/Helipad_DataBase_annotated.csv"
+    output_folder = "./helipad_images1"
     download_images = True
-    google_api_key_filepath = "../../api.csv"
+    google_api_key_filepath = "./api.csv"
 
     csv_to_yolo = CsvToYolo(input_csv_file_path=input_csv_file_path,
                            output_folder=output_folder,
