@@ -21,7 +21,7 @@ class CsvToYolo:
 
         # Folder paths
         self.image_folder_root = os.path.join(self.output_folder, 'images')
-        self.label_folder_root = os.path.join(self.output_folder, 'Helipad_labels')
+        self.label_folder_root = os.path.join(self.output_folder, 'labels')
 
         # Create required directories only when needed
         if self.download_images:
