@@ -33,7 +33,7 @@ class CsvToYolo:
                 self.api_key = f.read().strip()
 
         for i in range(1, self.num_subsets + 1):
-            os.makedirs(os.path.join(self.label_folder_root, f'label_subset_{i}'), exist_ok=True)
+            os.makedirs(os.path.join(self.label_folder_root, f'image_subset_{i}'), exist_ok=True)
         os.makedirs(os.path.join(self.label_folder_root, 'validation'), exist_ok=True)
 
     def convert_to_yolo_format(self, min_x, min_y, max_x, max_y):
@@ -139,7 +139,7 @@ class CsvToYolo:
 
 if __name__ == "__main__":
     input_csv_file_path = "./data/Helipad_DataBase_annotated.csv"
-    output_folder = "./helipad_images1"
+    output_folder = "./dataset"
     download_images = True
     google_api_key_filepath = "./api.csv"
 
