@@ -6,4 +6,4 @@ Link on how to get an API key: https://developers.google.com/maps/documentation/
 
 popilate api.csv with the api key. 
 
-2. To generate Ensemple training dataset run csv_to_meta.py 
+2. To generate ensemple training dataset run csv_to_meta.py 
